@@ -1,0 +1,41 @@
+# Single‑molecule amplicon sequencing – Analysis scripts
+
+This repository contains the scripts used in the paper:
+
+> **Single-molecule amplicon sequencing reveals phylogenetic consistency across intraindividual ITS1 copies of the fruit fly, *Anastrepha fraterculus* complex (Diptera: Tephritidae)**  
+> *[Add full citation here: authors, year, journal, volume, pages, DOI]*
+
+The scripts implement the analysis workflow used to analyse variation of ITS1.
+
+---
+
+## 1. alignment_variation.py
+This script calculates the following variation parameters from a multifasta file: 
+
+1. Number of sequences
+2. Number of sequences without ambiguities
+3. Number of sequences with ambiguities
+4. Alignment length 
+5. Number of variable sites including nucleotides and indels
+6. Number of variable sites including only nucleotides
+7. Number of parsimony informative sites  
+8. Number of variable sites including only indels
+9. Mean of pairwise distance including gaps (gapweight=0.5) calculated using distmat tool (https://www.bioinformatics.nl/cgi-bin/emboss/distmat)
+10. Maximum pairwise distance including gaps (gapweight=0.5)  calculated using distmat tool (https://www.bioinformatics.nl/cgi-bin/emboss/distmat)
+
+
+## 1.1 Requirements
+
+The script requires:
+- mafft (https://mafft.cbrc.jp/alignment/software/)
+- distmat (https://emboss.sourceforge.net/apps/cvs/emboss/apps/distmat.html)
+- Python 3 and the following modules:
+  - Biopython
+  - numpy
+
+## 1.2 Usage
+```bash
+python alignment_variation.py  --input_fasta input.fasta
+```
+
+---
