@@ -94,7 +94,7 @@ The script requires:
 
 ## 4.2 Usage
 ```bash
-python phylogenetic_consistency.py --input_dir trees --input_reference_clade sequenceID_clade_name_list --outgroup outgroupID  --output output.out
+python analyze_trees.py --input_dir trees --input_reference_clade sequenceID_clade_name_list --outgroup outgroupID  --output output.out
 ```
 ---
 
