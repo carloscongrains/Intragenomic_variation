@@ -94,9 +94,8 @@ The script requires:
 
 ## 4.2 Usage
 ```bash
-python analyze_trees.py --input_dir haplotypes --input_hap_info input_hap.info --input_reference_clade phylo_groups --output output.log
+python phylogenetic_consistency.py --input_dir trees --input_reference_clade sequenceID_clade_name_list --outgroup outgroupID  --output output.out
 ```
-
 ---
 
 
